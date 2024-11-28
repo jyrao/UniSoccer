@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta name="description" content="UniSoccer">
+  <meta property="og:title" content="Towards Universal Soccer Video Understanding"/>
+  <meta property="og:description" content="Towards Universal Soccer Video Understanding"/>
+  <meta property="og:url" content="https://jyrao.github.io/UniSoccer/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
@@ -53,7 +53,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Towards Universal Soccer Video Understanding</h1>
+            <h1 class="title is-1 publication-title" style="margin-bottom: 35px;">Towards Universal Soccer Video Understanding</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -70,9 +70,9 @@
                 <a href="https://weidixie.github.io" target="_blank">Weidi Xie</a><sup>1 <i class="far fa-envelope"></i></sup></span>
                   </div>
 
-                  <div class="is-size-5 publication-authors">
+                  <div class="is-size-5 publication-authors" style="margin-bottom: 10px; margin-top: 20px;">
                     <span class="author-block"><sup>1</sup>School of Artifitial Intelligence, Shanghai Jiao Tong University, China</span><br>
-                    <span class="author-block"><sup>2</sup>CMIC, Shanghai Jiao Tong University, China</span>  <span class="author-block"><sup>3</sup>Alibaba Group, China</span>
+                    <span class="author-block"><sup>2</sup>CMIC, Shanghai Jiao Tong University, China</span> &nbsp;&nbsp; <span class="author-block"><sup>3</sup>Alibaba Group, China</span>
                     <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
@@ -133,14 +133,14 @@
   <div class="hero-body">
     <div class="container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
       <!-- 图片部分 -->
-      <div style="width: 40%; margin-bottom: 10px;">
-        <img src="./static/images/teaser.png" alt="Teaser" style="width: 100%; height: auto; object-fit: contain;">
+      <div style="width: 80%;">
+        <img src="./static/images/teaser.gif" alt="Teaser" style="width: 100%; height: auto; object-fit: contain;">
       </div>
       <!-- 文本部分 -->
-      <div style="width: 70%;">
-        <h2 class="subtitle" style="font-size: 16px; line-height: 1.5; text-align: justify; margin-top: 10px;">
+      <div style="width: 95%;  margin-top: -40px;  margin-bottom: 80px;">
+        <h2 class="subtitle" style="font-size: 16px; line-height: 1.5; text-align: justify;">
           <figcaption>
-            <strong><i>Overview.</i></strong> We present the largest soccer dataset to date, termed <strong>SoccerReplay-1988</strong>, and the first vision-language foundation model for soccer, <strong>MatchVision</strong>, capable of various tasks such as event classification and commentary generation.
+            <strong><i>Overview.</i></strong> We present the largest soccer dataset to date, <strong>SoccerReplay-1988</strong>, and the first vision-language foundation model for soccer, <strong>MatchVision</strong>, capable of tasks like event classification and commentary generation.
           </figcaption>
         </h2>
       </div>
@@ -148,12 +148,17 @@
   </div>
 </section>
 
-<section class="section hero" style="padding-top: 60px; padding-bottom: 40px;">
-  <div class="container is-max-desktop">
+<!-- 分隔线部分 -->
+<div style="width: 100%; text-align: center; margin-top: 20px;">
+  <div style="height: 2px; background: linear-gradient(to right, #d3d3d3 0%, #808080 50%, #d3d3d3 100%); width: 50%; margin-left: auto; margin-right: auto;"></div>
+</div>
+
+<section class="section hero">
+  <div class="container is-max-desktop" style="width: 90%; max-width: 1200px;">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3" style="margin-top: 60px; margin-bottom: 20px;">Abstract</h2>
-        <div class="content has-text-justified" style="line-height: 1.8;">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified" style="line-height: 1.8; margin-bottom: -40px;">
           <p>
             As a globally celebrated sport, soccer has attracted widespread interest from fans over the world. This paper aims to develop a comprehensive multi-modal framework for soccer video understanding. Specifically, we make the following contributions in this paper: <em>(i)</em> we introduce <strong>SoccerReplay-1988</strong>, the largest multi-modal soccer dataset to date, featuring videos and detailed annotations from 1,988 complete matches, with an automated annotation pipeline; <em>(ii)</em> we present the first visual-language foundation model in the soccer domain, <strong>MatchVision</strong>, which leverages spatiotemporal information across soccer videos and excels in various downstream tasks; <em>(iii)</em> we conduct extensive experiments and ablation studies on action classification, commentary generation, and multi-view foul recognition, and demonstrate state-of-the-art performance on all of them, substantially outperforming existing models, which has demonstrated the superiority of our proposed data and model. We believe that this work will offer a standard paradigm for sports understanding research. The code and model will be publicly available for reproduction.
           </p>
@@ -162,14 +167,20 @@
     </div>
   </div>
 </section>
+
 <!-- End paper abstract -->
+
+<!-- 分隔线部分 -->
+<div style="width: 100%; text-align: center; margin-top: 40px; margin-bottom: 40px;">
+  <div style="height: 2px; background: linear-gradient(to right, #d3d3d3 0%, #808080 50%, #d3d3d3 100%); width: 50%; margin-left: auto; margin-right: auto;"></div>
+</div>
 
 <!-- Vertical Image Display -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div class="vertical-image-display">
-        <div class="columns is-centered has-text-centered" style="margin-top: 20px; margin-bottom: 40px;"><h2 class="title is-3">SoccerReplay-1988 Dataset</h2></div>
+        <div class="columns is-centered has-text-centered" style="margin-bottom: 40px;"><h2 class="title is-3">SoccerReplay-1988 Dataset</h2></div>
         <div class="image-item">
           <img src="./static/images/dataset-1.png" alt="Dataset statistics 1"/>
           <h2 class="subtitle" style="margin-top: 20px;">
@@ -186,6 +197,9 @@
           </figcaption>
           </h2>
         </div>
+        <div style="width: 100%; text-align: center; margin-top: 40px; margin-bottom: 40px;">
+          <div style="height: 2px; background: linear-gradient(to right, #d3d3d3 0%, #808080 50%, #d3d3d3 100%); width: 80%; margin-left: auto; margin-right: auto;"></div>
+        </div>
         <div class="columns is-centered has-text-centered"><h2 class="title is-3">Method</h2></div>
         <div class="image-item">
           <img src="./static/images/method.png" alt="Overall Structure"/>
@@ -195,22 +209,30 @@
           </figcaption>
           </h2>
         </div>
+        <!-- 分隔线部分 -->
+        <div style="width: 100%; text-align: center; margin-top: 40px; margin-bottom: 40px;">
+          <div style="height: 2px; background: linear-gradient(to right, #d3d3d3 0%, #808080 50%, #d3d3d3 100%); width: 80%; margin-left: auto; margin-right: auto;"></div>
+        </div>
         <div class="columns is-centered has-text-centered"><h2 class="title is-3">Results</h2></div>
         <div class="image-item">
-          <img src="./static/images/result-old.png" alt="VQA Results"/>
-          <h2 class="subtitle">
+          <img src="./static/images/result-old.png" alt="VQA Results" style="width: 60%; height: auto;"/>
+          <h2 class="subtitle" style="width: 70%; margin-left: auto; margin-right: auto;">
             <figcaption>
               <strong>Quantitative Results on Event Classification and Commentary Generation.</strong> Here, SN, MT, and SR represent curated SoccerNet-v2, MatchTime, and SoccerReplay-1988, respectively. Moreover, B, M, R-L, and C refer to BLEU, METEOR, ROUGE-L, and CIDEr metrics, respectively. Within each unit, we denote the best performance in <span style="color:red; font-weight:bold;">RED</span> and the second-best performance in <span style="color:blue; text-decoration:underline;">BLUE</span>.
           </figcaption>
           </h2>
         </div>
         <div class="image-item">
-          <img src="./static/images/result-new.png" alt="VQA Results"/>
-          <h2 class="subtitle">
+          <img src="./static/images/result-new.png" alt="VQA Results" style="width: 60%; height: auto;"/>
+          <h2 class="subtitle" style="width: 70%; margin-left: auto; margin-right: auto;">
             <figcaption>
               <strong>Ablation Studies on Downstream tasks of Our New Benchmarks.</strong> <em>Left: Event Classification.</em> We explore the impact of various training settings of our MatchVision encoder on the SoccerReplay-test benchmark. Here, Sup., Contra., and SR refer to supervised training, visual-language contrastive learning, and SoccerReplay-1988 dataset, respectively.<em>Right: Commentary Generation.</em> We investigate the impact of different training strategies and datasets on MatchVision using the SoccerReplay-test benchmark. `V' and `L" denote the visual encoder and the LLM decoder, respectively, where <span>&#10004;</span> and <span>&#10008;</span> indicate whether each component was trainable.
           </figcaption>
           </h2>
+        </div>
+        <!-- 分隔线部分 -->
+        <div style="width: 100%; text-align: center; margin-top: 40px; margin-bottom: 40px;">
+          <div style="height: 2px; background: linear-gradient(to right, #d3d3d3 0%, #808080 50%, #d3d3d3 100%); width: 80%; margin-left: auto; margin-right: auto;"></div>
         </div>
         <div class="columns is-centered has-text-centered"><h2 class="title is-3">Qualitative Results</h2></div>
         <div class="image-item">
@@ -236,31 +258,57 @@
 <!-- End Vertical Image Display -->
 
 <style>
-  .subtitle {
-    width: 70%;
-    display: block;
-    margin-left: calc(50% - 35%);
-  }
-  .vertical-image-display .image-item {
-    margin-bottom: 50px; /* Space between items */
-  }
-  .vertical-image-display img {
-    width: 70%; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    /* Centering image */
-    display: block;
-    margin-left: calc(50% - 35%);
-  }
-  figcaption {
-    font-size: 14px; 
-    line-height: 1.5;
-  }
-  .hero.is-small {
-      margin-bottom: -5rem; 
-      padding-bottom: 0;
-    }
-</style>
+/* 确保标题在屏幕宽度足够时不换行 */
+.publication-title {
+  white-space: nowrap; /* 防止自动换行 */
+  overflow: hidden; /* 如果超出显示区域，隐藏多余文本 */
+  text-overflow: ellipsis; /* 超过部分用省略号表示 */
+  width: 100%; /* 让标题尽可能占满整个宽度 */
+}
 
+/* 当屏幕尺寸小于某个阈值时，允许换行 */
+@media (max-width: 864px) {
+  .publication-title {
+    white-space: normal; /* 允许换行 */
+  }
+}
+
+/* 设置 subtitle 部分和图像的宽度 */
+.subtitle, .vertical-image-display .image-item img {
+  width: 80%; /* 让 subtitle 和图像的宽度稍微窄一点 */
+  display: block;
+  margin-left: auto; /* 居中 */
+  margin-right: auto; /* 居中 */
+  text-align: justify; /* 确保文本对齐 */
+  box-sizing: border-box; /* 让宽度包括 padding */
+}
+
+
+/* 针对 figcaption 文本部分的样式 */
+figcaption {
+  font-size: 16px; 
+  line-height: 1.5;
+  text-align: justify; /* 保证文字对齐 */
+  margin-top: 10px; /* 给 figcaption 添加上边距 */
+}
+
+/* 为图片和 figcaption 增加间距，保证图文之间不挤在一起 */
+.vertical-image-display .image-item {
+  margin-bottom: 40px; /* 增加项目之间的间距 */
+}
+
+/* 为 hero 部分添加适当的内边距 */
+.hero.is-small {
+  margin-bottom: -5rem; 
+  padding-bottom: 0;
+}
+
+/* 确保图像部分不被拉伸，并且保持原有比例 */
+.vertical-image-display img {
+  height: auto; /* 保持图片的纵横比 */
+  object-fit: contain; /* 确保图像不被拉伸 */
+}
+</style>
 
 
 <!--BibTex citation -->
