@@ -9,7 +9,7 @@
   <meta property="og:description" content="Towards Universal Soccer Video Understanding"/>
   <meta property="og:url" content="https://jyrao.github.io/UniSoccer/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image" content="/Users/jiayuanrao/Dwork/AI4Sports/MatchVision/webpage/static/images/teaser.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
@@ -215,7 +215,7 @@
         </div>
         <div class="columns is-centered has-text-centered"><h2 class="title is-3">Results</h2></div>
         <div class="image-item">
-          <img src="./static/images/result-old.png" alt="VQA Results" style="width: 60%; height: auto;"/>
+          <img src="./static/images/result-old.png" alt="Results1" style="width: 60%; height: auto;"/>
           <h2 class="subtitle" style="width: 65%; margin-left: auto; margin-right: auto;">
             <figcaption>
               <strong>Quantitative Results on Event Classification and Commentary Generation.</strong> Here, SN, MT, and SR represent curated SoccerNet-v2, MatchTime, and SoccerReplay-1988, respectively. Moreover, B, M, R-L, and C refer to BLEU, METEOR, ROUGE-L, and CIDEr metrics, respectively. Within each unit, we denote the best performance in <span style="color:red; font-weight:bold;">RED</span> and the second-best performance in <span style="color:blue; text-decoration:underline;">BLUE</span>.
@@ -223,7 +223,7 @@
           </h2>
         </div>
         <div class="image-item">
-          <img src="./static/images/result-new.png" alt="VQA Results" style="width: 60%; height: auto;"/>
+          <img src="./static/images/result-new.png" alt="Results2" style="width: 60%; height: auto;"/>
           <h2 class="subtitle" style="width: 65%; margin-left: auto; margin-right: auto;">
             <figcaption>
               <strong>Ablation Studies on Downstream tasks of Our New Benchmarks.</strong> <em>Left: Event Classification.</em> We explore the impact of various training settings of our MatchVision encoder on the SoccerReplay-test benchmark. Here, Sup., Contra., and SR refer to supervised training, visual-language contrastive learning, and SoccerReplay-1988 dataset, respectively.<em>Right: Commentary Generation.</em> We investigate the impact of different training strategies and datasets on MatchVision using the SoccerReplay-test benchmark. `V' and `L" denote the visual encoder and the LLM decoder, respectively, where <span>&#10004;</span> and <span>&#10008;</span> indicate whether each component was trainable.
@@ -236,7 +236,7 @@
         </div>
         <div class="columns is-centered has-text-centered"><h2 class="title is-3">Qualitative Results</h2></div>
         <div class="image-item">
-          <img src="./static/images/qualitative.png" alt="VQA Results"/>
+          <img src="./static/images/qualitative.png" alt="Results3"/>
           <h2 class="subtitle" style="margin-top: 20px; margin-bottom: 40px;">
             <figcaption>
               <strong>Qualitative Results for Event Classification and Commentary Generation.</strong> GT denotes ground truth, while "w/o SR" and "w/ SR" indicate models trained without and with the SoccerReplay-1988 dataset, respectively. Training with the SoccerReplay-1988 dataset improves event classification performance. Specifically for commentary generation, this expanded training data enables the MatchVoice model to demonstrate notable advantages in (a) more detailed descriptions, (b) greater linguistic variety, (c) higher accuracy in event depiction, (d) better adherence to updated rules, and (e) improved specificity in scenario response.
@@ -244,7 +244,7 @@
           </h2>
         </div>
         <div class="image-item">
-          <img src="./static/images/fig.png" alt="VQA Results"/>
+          <img src="./static/images/fig.png" alt="Results4"/>
           <h2 class="subtitle" style="margin-top: 20px; margin-bottom: 40px;">
             <figcaption>
               <strong>More Qualitative Results for Commentary Generation of Different Classes.</strong> We provide more qualitative visualizations of commentary generation across various events on the field.
