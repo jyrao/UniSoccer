@@ -8,7 +8,7 @@ The code will be released soon...
 </div>
 
 ## Some Information
-[Project Page](https://jyrao.github.io/UniSoccer/)  $\cdot$ [Paper](https://arxiv.org/abs/2412.01820/)(Soon) $\cdot$ [Dataset]()(Soon) $\cdot$ [Checkpoints]()(Soon) 
+[Project Page](https://jyrao.github.io/UniSoccer/)  $\cdot$ [Paper](https://arxiv.org/abs/2412.01820/) $\cdot$ [Dataset]()(Soon) $\cdot$ [Checkpoints]()(Soon) 
 
 ## News
 - [2024.12] Our pre-print paper is released on arXiv.
