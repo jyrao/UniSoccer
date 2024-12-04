@@ -1,7 +1,7 @@
 # UniSoccer: Towards Universal Soccer Video Understanding
 This repository contains the official PyTorch implementation of UniSoccer: https://arxiv.org/abs/2412.01820/.
 
-The code will be released soon...
+The code, data, and checkpoints will be released soon... We are working on it.
 
 <div align="center">
    <img src="./architecture.png">
