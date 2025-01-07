@@ -1,0 +1,1 @@
+The data in our dataset SoccerReplay-1988 is still on processing due to copyright considerations, hopefully we will find a proper method to release our dataset.

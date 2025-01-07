@@ -1,16 +1,14 @@
 # UniSoccer: Towards Universal Soccer Video Understanding
-This repository contains the official PyTorch implementation of UniSoccer: https://arxiv.org/abs/2412.01820/.
+This repository contains the official PyTorch implementation of paper **"Towards Universal Soccer Video Understanding"**: https://arxiv.org/abs/2412.01820/.
 
-The code, data, and checkpoints will be released soon... We are working on it.
+[Project Page](https://jyrao.github.io/UniSoccer/)  $\cdot$ [Paper](https://arxiv.org/abs/2412.01820/) $\cdot$ [Dataset]() (Soon) $\cdot$ [Checkpoints](https://huggingface.co/Homie0609/UniSoccer) 
 
 <div align="center">
-   <img src="./architecture.png">
+   <img src="./teaser.gif">
 </div>
 
-## Some Information
-[Project Page](https://jyrao.github.io/UniSoccer/)  $\cdot$ [Paper](https://arxiv.org/abs/2412.01820/) $\cdot$ [Dataset]()(Soon) $\cdot$ [Checkpoints]()(Soon) 
-
 ## News
+- [2025.01] We open-sourced our codes and checkpoints for UniSoccer.
 - [2024.12] Our pre-print paper is released on arXiv.
 
 ## Requirements
@@ -28,12 +26,68 @@ conda activate UniSoccer
 
 ## Train
 
-To be updated soon...
+<div align="center">
+   <img src="./architecture.png">
+</div>
+
+#### Pretrain MatchVision Encoder
+As described in paper, we have two methods for pretraining MatchVision backbone (supervised classification & contrastive commentary). You can train both this two methods as following shows:
+
+
+First of all, you should prepare textual data as the format in `train_data/json`, and preprocess soccer videos into 30 second clips (15s before and after timestamps) for pretraining.
+
+**Supervised Classification**
+```
+python task/pretrain_MatchVoice_Classifier.py config/pretrain_classification.py
+```
+**Contrastive Commentary Retrieval**
+```
+python task/pretrain_contrastive.py config/pretrain_contrastive.py
+```
+
+Also, you could finetune MatchVision with
+```
+python task/finetune_contrastive.py config/finetune_contrastive.py
+```
+To be noted, you should replace the folders in task and config files.
+
+#### Train Downstream Tasks
+
+You could train the commentary task by several different methods:
+
+1. Use mp4 files
+```
+python task/downstream_commentary_new_benchmark.py 
+```
+For this method, you might train the commentary model MatchVoice with open visual encoder or language decoder, so you should crop the videos as 30s clips named as json files shows.
+
+2. Use *.npy* files
+```
+python task/downstream_commentary.py
+```
+For this method, you cannot open the visual encoder, so you can extract features of all video clips and change ".mp4" by ".npy" as file names.
+
+**To be noted,** folder `words_world` records the token ids of all words in LLaMA-3(8B) tokenizer of different datasets as
+
+- *`match_time.pkl`*: MatchTime dataset ([Link here](https://huggingface.co/datasets/Homie0609/MatchTime))
+- *`soccerreplay-1988.pkl`*: SoccerReplay-1988 dataset. (Not released yet)
+- *`merge.pkl`*: Union set of MatchTime & SoccerReplay-1988
+
 
 ## Inference
 
-To be updated soon...
+<div align="center">
+   <img src="./inference.png">
+</div>
 
+For inference, you could use the following codes, be sure that you have correctly crop the video clips, which is in the same format as before.
+```
+python inference/inference.py
+```
+Then, you could test the metrics for output `sample.csv` by:
+```
+python inference/score_single.py --csv_path inference/sample.csv
+```
 
 ## Citation
 If you use this code and data for your research or project, please cite:
@@ -47,12 +101,12 @@ If you use this code and data for your research or project, please cite:
 
 ## TODO
 - [x] Release Paper
-- [ ] Release Checkpoints
+- [x] Release Checkpoints
 - [ ] Release Dataset
-- [ ] Code of Visual Encoder Pretraining
-- [ ] Code of Downstream Tasks
-- [ ] Code of Inference
-- [ ] Code of Evaluation
+- [x] Code of Visual Encoder Pretraining
+- [x] Code of Downstream Tasks
+- [x] Code of Inference
+- [x] Code of Evaluation
 
 
 ## Acknowledgements
