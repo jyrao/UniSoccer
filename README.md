@@ -1,7 +1,7 @@
-# UniSoccer: Towards Universal Soccer Video Understanding
+# UniSoccer: Towards Universal Soccer Video Understanding (CVPR 2025)
 This repository contains the official PyTorch implementation of paper **"Towards Universal Soccer Video Understanding"**: https://arxiv.org/abs/2412.01820/.
 
-[Project Page](https://jyrao.github.io/UniSoccer/)  $\cdot$ [Paper](https://arxiv.org/abs/2412.01820/) $\cdot$ [Dataset]() (Soon) $\cdot$ [Checkpoints](https://huggingface.co/Homie0609/UniSoccer) 
+[Project Page](https://jyrao.github.io/UniSoccer/)  $\cdot$ [Paper](https://arxiv.org/abs/2412.01820/) $\cdot$ [Dataset](https://huggingface.co/datasets/Homie0609/SoccerReplay-1988) (Soon) $\cdot$ [Checkpoints](https://huggingface.co/Homie0609/UniSoccer) 
 
 <div align="center">
    <img src="./teaser.gif">
@@ -92,11 +92,11 @@ python inference/score_single.py --csv_path inference/sample.csv
 ## Citation
 If you use this code and data for your research or project, please cite:
 
-	@misc{rao2024unisoccer,
+	@InProceedings{rao2024unisoccer,
             title   = {Towards Universal Soccer Video Understanding},
             author  = {Rao, Jiayuan and Wu, Haoning and Jiang, Hao and Zhang, Ya and Wang, Yanfeng and Xie, Weidi},
-            journal = {arXiv preprint arXiv:2412.01820},
-            year    = {2024},
+            booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+            year    = {2025},
       }
 
 ## TODO
