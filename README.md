@@ -1,14 +1,14 @@
 # UniSoccer: Towards Universal Soccer Video Understanding (CVPR 2025)
 This repository contains the official PyTorch implementation of paper **"Towards Universal Soccer Video Understanding"**: https://arxiv.org/abs/2412.01820/.
 
-[Project Page](https://jyrao.github.io/UniSoccer/)  $\cdot$ [Paper](https://arxiv.org/abs/2412.01820/) $\cdot$ [Dataset](https://huggingface.co/datasets/Homie0609/SoccerReplay-1988) $\cdot$ [Checkpoints](https://huggingface.co/Homie0609/UniSoccer) 
+[Project Page](https://jyrao.github.io/UniSoccer/)  $\cdot$ [Paper](https://arxiv.org/abs/2412.01820/) $\cdot$ [Dataset](https://huggingface.co/datasets/Homie0609/SoccerReplay-1988) (fill out [NDA form](https://bifbrprted3.feishu.cn/share/base/form/shrcnkMPY0WTotp0K3mtjJtMgSf) first) $\cdot$ [Checkpoints](https://huggingface.co/Homie0609/UniSoccer) 
 
 <div align="center">
    <img src="./teaser.gif">
 </div>
 
 ## News
-- [2025.03] We have open-sourced our dataset, please fill out some forms to obtain access.
+- [2025.03] We have open-sourced our dataset, please fill out [NDA form](https://bifbrprted3.feishu.cn/share/base/form/shrcnkMPY0WTotp0K3mtjJtMgSf) to claim the dataset would not be used for commercial to obtain access.
 - [2025.02] 🎉Our paper has been accepted to CVPR 2025.
 - [2025.01] We have open-sourced our codes and checkpoints for UniSoccer.
 - [2024.12] Our pre-print paper is released on arXiv.
@@ -72,7 +72,7 @@ For this method, you cannot open the visual encoder, so you can extract features
 **To be noted,** folder `words_world` records the token ids of all words in LLaMA-3(8B) tokenizer of different datasets as
 
 - *`match_time.pkl`*: MatchTime dataset ([Link here](https://huggingface.co/datasets/Homie0609/MatchTime))
-- *`soccerreplay-1988.pkl`*: SoccerReplay-1988 dataset. (Not released yet)
+- *`soccerreplay-1988.pkl`*: SoccerReplay-1988 dataset. ([Link Here](https://huggingface.co/datasets/Homie0609/SoccerReplay-1988). Before you access the dataset you have to fill out a [NDA form](https://bifbrprted3.feishu.cn/share/base/form/shrcnkMPY0WTotp0K3mtjJtMgSf) to make sure this dataset would not be used for commercial.)
 - *`merge.pkl`*: Union set of MatchTime & SoccerReplay-1988
 
 
