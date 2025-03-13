@@ -1,14 +1,16 @@
 # UniSoccer: Towards Universal Soccer Video Understanding (CVPR 2025)
 This repository contains the official PyTorch implementation of paper **"Towards Universal Soccer Video Understanding"**: https://arxiv.org/abs/2412.01820/.
 
-[Project Page](https://jyrao.github.io/UniSoccer/)  $\cdot$ [Paper](https://arxiv.org/abs/2412.01820/) $\cdot$ [Dataset](https://huggingface.co/datasets/Homie0609/SoccerReplay-1988) (Soon) $\cdot$ [Checkpoints](https://huggingface.co/Homie0609/UniSoccer) 
+[Project Page](https://jyrao.github.io/UniSoccer/)  $\cdot$ [Paper](https://arxiv.org/abs/2412.01820/) $\cdot$ [Dataset](https://huggingface.co/datasets/Homie0609/SoccerReplay-1988) $\cdot$ [Checkpoints](https://huggingface.co/Homie0609/UniSoccer) 
 
 <div align="center">
    <img src="./teaser.gif">
 </div>
 
 ## News
-- [2025.01] We open-sourced our codes and checkpoints for UniSoccer.
+- [2025.03] We have open-sourced our dataset, please fill out some forms to obtain access.
+- [2025.02] 🎉Our paper has been accepted to CVPR 2025.
+- [2025.01] We have open-sourced our codes and checkpoints for UniSoccer.
 - [2024.12] Our pre-print paper is released on arXiv.
 
 ## Requirements
@@ -102,7 +104,7 @@ If you use this code and data for your research or project, please cite:
 ## TODO
 - [x] Release Paper
 - [x] Release Checkpoints
-- [ ] Release Dataset
+- [x] Release Dataset
 - [x] Code of Visual Encoder Pretraining
 - [x] Code of Downstream Tasks
 - [x] Code of Inference
